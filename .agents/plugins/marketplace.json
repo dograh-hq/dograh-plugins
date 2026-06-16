@@ -1,0 +1,20 @@
+{
+  "name": "dograh",
+  "interface": {
+    "displayName": "Dograh"
+  },
+  "plugins": [
+    {
+      "name": "dograh",
+      "source": {
+        "source": "local",
+        "path": "./plugins/dograh"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

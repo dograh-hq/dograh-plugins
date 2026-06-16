@@ -1,0 +1,40 @@
+{
+  "name": "dograh",
+  "version": "0.1.0",
+  "description": "Set up, run, and troubleshoot a self-hosted Dograh voice-AI deployment.",
+  "author": {
+    "name": "Dograh",
+    "url": "https://dograh.com"
+  },
+  "homepage": "https://docs.dograh.com",
+  "repository": "https://github.com/dograh-hq/dograh-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "dograh",
+    "voice-ai",
+    "setup",
+    "deployment",
+    "docker",
+    "troubleshooting"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Dograh",
+    "shortDescription": "Set up, run, and troubleshoot Dograh deployments.",
+    "longDescription": "Dograh helps Codex set up, develop on, and troubleshoot self-hosted Dograh voice-AI deployments by orienting to the user's environment, reading Dograh's current docs and scripts, and running diagnostics without hard-coding setup steps.",
+    "developerName": "Dograh",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Skills",
+      "Shell",
+      "Troubleshooting"
+    ],
+    "websiteURL": "https://dograh.com",
+    "defaultPrompt": [
+      "Set up Dograh locally",
+      "Diagnose my Dograh deployment",
+      "Help me develop Dograh"
+    ],
+    "brandColor": "#111827"
+  }
+}

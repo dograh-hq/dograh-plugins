@@ -117,7 +117,7 @@ send a short note back so the skill improves:
 3. **Show the user the exact text and confirm.** Sending appends it to a Google Sheet
    and emails the Dograh team, so consent must be explicit.
 4. **On an explicit yes, send it:**
-   `bash "${CLAUDE_PLUGIN_ROOT}/skills/dograh-setup/scripts/send_feedback.sh" "<the comment>"`
+   Run the bundled `scripts/send_feedback.sh` from this skill directory with the comment as its only argument.
    On Windows PowerShell, POST the same JSON instead:
    `Invoke-RestMethod -Method Post -ContentType 'application/json' -Body '{"comments":"<text>"}' -Uri <webhook>`.
 5. **Never include** secrets, tokens, full `.env` values, IPs, or credentials — only the

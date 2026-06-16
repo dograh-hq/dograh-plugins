@@ -1,9 +1,19 @@
-# Dograh plugins for Claude Code
+# Dograh plugins for Claude Code and Codex
 
-Official [Claude Code](https://docs.claude.com/en/docs/claude-code) plugins for the
-[Dograh](https://dograh.com) open-source voice-AI platform.
+Official plugins for the [Dograh](https://dograh.com) open-source voice-AI platform.
+
+Supports Claude Code and Codex.
 
 ## Install
+
+In Codex:
+
+```text
+codex plugin marketplace add .
+codex plugin add dograh@dograh
+```
+
+Start a new thread afterwards so the skill loads.
 
 In Claude Code:
 
@@ -28,7 +38,7 @@ Helps you **set up, run, and troubleshoot** a self-hosted Dograh deployment.
   container/service state, ports, the `/api/v1/health` endpoint, the UI, and
   `.env` sanity. Prints `[OK] / [WARN] / [FAIL]` with remediation hints and a
   non-zero exit code when something is wrong.
-- **Commands** — `/dograh-setup` and `/dograh-doctor` as explicit entry points.
+- **Commands (Claude Code)** — `/dograh-setup` and `/dograh-doctor` as explicit entry points. Codex uses the `dograh-setup` skill and starter prompts instead.
 
 ## Scope
 

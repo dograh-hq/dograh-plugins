@@ -40,6 +40,30 @@ Helps you **set up, run, and troubleshoot** a self-hosted Dograh deployment.
   non-zero exit code when something is wrong.
 - **Commands (Claude Code)** — `/dograh-setup` and `/dograh-doctor` as explicit entry points. Codex uses the `dograh-setup` skill and starter prompts instead.
 
+## Example prompts
+
+### Codex
+
+```text
+Use $dograh:dograh-setup to set up a Docker dev stack where I can edit Dograh code.
+Use $dograh:dograh-setup to deploy Dograh on my Ubuntu VPS over HTTPS.
+Use $dograh:dograh-setup to wire Dograh to my existing Postgres, Redis, and S3-compatible storage.
+Use $dograh:dograh-setup to diagnose why my API health check is failing.
+Use $dograh:dograh-setup to fix local WebRTC audio on my Docker deployment.
+Use $dograh:dograh-setup to recover a half-finished setup without deleting volumes or recordings.
+```
+
+### Claude Code
+
+```text
+/dograh-setup develop locally with Docker, fresh bundled services, and an editable codebase
+/dograh-setup deploy on my remote Ubuntu VPS over HTTPS; ask before installing Docker
+/dograh-setup develop natively and reuse my existing Postgres, Redis, and S3-compatible storage
+/dograh-setup set up a local demo stack, then tell me how to add inference provider keys
+/dograh-doctor ./dograh-deploy
+/dograh-doctor the UI loads but calls have no local WebRTC audio
+```
+
 ## Scope
 
 v1 covers **setup and troubleshooting** — deploying Dograh (local or remote, with Docker

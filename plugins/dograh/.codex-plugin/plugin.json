@@ -31,9 +31,9 @@
     ],
     "websiteURL": "https://dograh.com",
     "defaultPrompt": [
-      "Set up Dograh locally",
-      "Diagnose my Dograh deployment",
-      "Help me develop Dograh"
+      "Use $dograh:dograh-setup to set up a Docker dev stack where I can edit Dograh code.",
+      "Use $dograh:dograh-setup to deploy Dograh on my Ubuntu VPS over HTTPS.",
+      "Use $dograh:dograh-setup to diagnose a failing Dograh health check."
     ],
     "brandColor": "#111827"
   }

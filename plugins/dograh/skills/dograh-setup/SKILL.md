@@ -56,6 +56,24 @@ rather than silently installing fresh infra or forcing Docker. (One buried gotch
 database must support the vector extension Dograh's migrations enable — a plain Postgres
 without it will fail to migrate.)
 
+**4. Consent checkpoints — do not infer.** Before installing packages, starting
+services, creating files, or running setup scripts, stop and summarize the intended path
+in one sentence. Ask for explicit confirmation if any of these are true:
+
+- Docker is not installed and would need to be installed.
+- The deployment will create fresh backing services instead of reusing existing ones.
+- The setup will write into the user's home directory, create `.env`, certificates,
+  Docker volumes, or start long-running services.
+- The user has not explicitly chosen local Docker, remote Docker, devcontainer, or
+  host-managed native setup.
+
+A tool approval prompt is not a substitute for setup-choice confirmation. It authorizes
+a command only; it does not mean the user agreed with the inferred architecture.
+
+If Docker is missing, do not install it automatically. First ask whether the user wants
+Docker Compose with fresh bundled services or a native/external-service setup. Install
+Docker only after the user explicitly chooses the Docker path.
+
 ## Act — read the source for the chosen path, then drive it
 
 Don't follow step lists from memory — read Dograh's current source and do what it says.

@@ -16,6 +16,9 @@ Develop (code) ──┤        Remote server ...... remote (HTTPS — run ON th
 
 Ask which branch when it isn't obvious, and settle **fresh vs reuse** for the backing
 services (SKILL.md Step 0.3) — that's a separate choice from how the app is run.
+If the next action would install Docker, create config, create volumes, or start
+long-running services, return to SKILL.md Step 0.4 and get explicit setup-choice
+confirmation first.
 
 ## Where to read each branch
 

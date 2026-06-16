@@ -9,7 +9,7 @@ Supports Claude Code and Codex.
 In Codex:
 
 ```text
-codex plugin marketplace add .
+codex plugin marketplace add dograh-hq/dograh-plugins
 codex plugin add dograh@dograh
 ```
 

@@ -1,0 +1,5 @@
+# Skill-creator eval workspaces — local-only test artifacts, never published.
+*-workspace/
+
+# OS / editor cruft
+.DS_Store

@@ -1,0 +1,18 @@
+{
+  "name": "dograh",
+  "owner": {
+    "name": "Dograh",
+    "url": "https://dograh.com"
+  },
+  "metadata": {
+    "description": "Official Claude Code plugins for the Dograh open-source voice-AI platform — set up, run, and troubleshoot self-hosted deployments."
+  },
+  "plugins": [
+    {
+      "name": "dograh",
+      "source": "./plugins/dograh",
+      "version": "0.1.0",
+      "description": "Set up, run, and troubleshoot a self-hosted Dograh voice-AI deployment (Docker, local or remote). Installs prerequisites, drives the official setup scripts, and diagnoses failing services and health checks."
+    }
+  ]
+}

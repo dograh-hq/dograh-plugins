@@ -1,0 +1,20 @@
+{
+  "name": "dograh",
+  "version": "0.1.0",
+  "description": "Set up, run, and troubleshoot a self-hosted Dograh voice-AI deployment (Docker, local or remote).",
+  "author": {
+    "name": "Dograh",
+    "url": "https://dograh.com"
+  },
+  "homepage": "https://docs.dograh.com",
+  "repository": "https://github.com/dograh-hq/dograh-plugins",
+  "license": "Apache-2.0",
+  "keywords": [
+    "dograh",
+    "voice-ai",
+    "setup",
+    "deployment",
+    "docker",
+    "troubleshooting"
+  ]
+}
